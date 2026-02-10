@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sesys Accessories</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Sesys Accessories</h1>
+    <nav>
+      <button onclick="filterCategory('Fascinators')">Fascinators</button>
+      <button onclick="filterCategory('Hatinators')">Hatinators</button>
+      <button onclick="filterCategory('Hats')">Hats</button>
+      <button onclick="filterCategory('Bridal Headpieces')">Bridal Headpieces</button>
+      <button onclick="showAll()">All</button>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Catalogue</h2>
+    <div id="productsGrid" class="products-grid">
+      <!-- Products will appear here -->
+    </div>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="" style="width:100%; border-radius:8px; margin-bottom:10px;">
+        <h3 id="modalName"></h3>
+        <p id="modalCategory"></p>
+      </div>
+    </div>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <p>Phone: <a href="tel:+233241113194">0241113194</a></p>
+      <p>WhatsApp: <a href="https://wa.me/233241113194" target="_blank">Chat on WhatsApp</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/sesys_accessoriesgh?igsh=cGI1bmx6MXp4Mmx0" target="_blank">@sesys_accessoriesgh</a></p>
+    </section>
+  </main>
+
+  <!-- Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../js/supabase.js"></script>
+  <script src="../js/shop.js"></script>
+</body>
+</html>
